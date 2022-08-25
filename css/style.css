@@ -203,6 +203,7 @@ body {
     grid-area: seccion-parrafo;
     display: flex;
     position: relative;
+    background-color: #d9fbfb;
 }
 
 .container-img-par {
