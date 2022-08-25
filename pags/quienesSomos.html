@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/09746e0614.js" crossorigin="anonymous"></script>
   <link rel="icon" href="../img/favicon/favicon.png" type="image/png">
-  <script defer src="../js/index.js"></script>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.css">
   <title>Yunino</title>
 </head>
@@ -15,69 +15,90 @@
 <body>
   <div class="contenedor-pag">
     <!--Header/Cabecera-->
-    <header class="header">
-      <div class="cabecera">
-        <li class="list-1">
-          <p><a href="./Registrate.html" class="link">Usuario</a></p>
-          <i class="fa-regular fa-user icon"></i>
-        </li>
+    <header class="d-flex justify-content-end">
+      <div class="row p-0 m-0">
+        <div class="col p-0">
+          <li class="list-1">
+            <p class="m-0"><a href="./Registrate.html" class="link">Usuario</a></p>
+          </li>
+        </div>
 
-        <li class="list-2">
-          <p><a href="./Registrate.html" class="link">Carrito</a></p>
-          <i class="fa-regular fa-user icon"></i>
-        </li>
+        <div class="col p-0">
+          <li class="list-2">
+            <p class="m-0"><a href="./Registrate.html" class="link">Carrito</a></p>
+          </li>
+        </div>
       </div>
     </header>
 
     <!--Nav/Menu-->
-    <nav class="nav">
-      <a href="../index.html" class="logo nav-link">Yunino</a>
-      <button class="toggle">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <ul class="nav_menu ">
-        <li class="nav_item">
-          <a href="../index.html" class="nav-menu-link nav-link">Inicio</a>
-        </li>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Yunino</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars icono"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
 
-        <li class="nav_item">
-          <a href="./productos.html" class="nav-menu-link nav-link">Producto</a>
-        </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./productos.html">Libreria</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./productos.html">Merceria</a></li>
+              </ul>
+            </li>
 
-        <li class="nav_item">
-          <a href="./quienesSomos.html" class="nav-menu-link nav-link">Quienes Somos</a>
-        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./quienesSomos.html">Quienes Somos</a>
+            </li>
 
-        <li class="nav_item">
-          <a href="./contacto.html" class="nav-menu-link nav-link">Contacto</a>
-        </li>
-      </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Bucar Productos" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
     </nav>
 
-    <!-- Pagina -->
-    
-    <section class="pagina-quienessomos">
-      <div class="seccion-parrafo">
-        <h2 class="titulo">Yunino</h2>
-        <h3 class="subtitulo">Libreria y Merceria</h3>
-        <p class="parrafo-princ">
-          Somos una empresa que se destaca por el compromiso, la seriedad y la celeridad en las entregas a tiempo y
-          con
-          los precios mas competitivos del mercado, nos orientamos a la satisfacción al cliente como así también su
-          fidelización.
-          Ofrecemos una amplia variedad de artículos y marcas en los rubros de librería y Mercería.
-          Estamos ubicados en la ciudad de Posadas, Localidad Garupa, provincia de Misiones, también contamos opciones
-          para realizar entregas a todo el pais.
-          Cabe destacar que ofrecemos entregas sin cargo a domicilio en la ciudad de Garupa y alrededores.
-          Ofrecemos además las formas de pago mas convenientes para nuestros clientes, aceptamos pagos con tarjeta de
-          crédito y debito, cheques electrónicos y físicos, transferencias bancarias y efectivo.
-        </p>
-      </div>
+    <!-- Pagina Quienes Somos-->
+    <section class="container-fluid cont-parf">
+      <div class="row">
+        <div class="col contenedor-text">
+          <h2 class="titulo-QS">Yunino</h2>
+          <h3 class="subtitulo">Libreria y Merceria</h3>
+          <p class="parrafo-princ m-0">
+            Somos una empresa que se destaca por el compromiso, la seriedad y la celeridad en las entregas a tiempo y
+            con
+            los precios mas competitivos del mercado, nos orientamos a la satisfacción al cliente como así también su
+            fidelización.
+            Ofrecemos una amplia variedad de artículos y marcas en los rubros de librería y Mercería.
+            Estamos ubicados en la ciudad de Posadas, Localidad Garupa, provincia de Misiones, también contamos opciones
+            para realizar entregas a todo el pais.
+            Cabe destacar que ofrecemos entregas sin cargo a domicilio en la ciudad de Garupa y alrededores.
+            Ofrecemos además las formas de pago mas convenientes para nuestros clientes, aceptamos pagos con tarjeta de
+            crédito y debito, cheques electrónicos y físicos, transferencias bancarias y efectivo.
+          </p>
+        </div>
 
-      <div class="container-img-par">
-        <img src="./img/local-quienes-somos.jpg" alt="Imagen del Local">
+        <div class="col d-flex justify-content-center p-0 cont-img">
+          <img class="imag-container-fluid" src="../img/img_Q_S/local-quienes-somos.jpg" alt="Imagen del Local">
+        </div>
       </div>
-
     </section>
 
     <!-- Pie de Pagina -->
@@ -86,7 +107,7 @@
         <div class="box">
           <figure>
             <a href="#">
-              <img src="../img/Logo.jpg" alt="Logo Empresa" width="50px">
+              <img src="../img/img_logo/Logo.jpg" alt="Logo Empresa" width="50px">
             </a>
           </figure>
         </div>
@@ -133,6 +154,7 @@
       </div>
     </footer>
   </div>
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

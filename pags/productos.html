@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/09746e0614.js" crossorigin="anonymous"></script>
     <link rel="icon" href="../img/favicon/favicon.png" type="image/png">
-    <script defer src="../js/index.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Yunino</title>
 </head>
@@ -15,54 +15,199 @@
 <body>
     <div class="contenedor-pag">
         <!--Header/Cabecera-->
-        <header class="header">
-            <div class="cabecera">
-                <li class="list-1">
-                    <p><a href="./Registrate.html" class="link">Usuario</a></p>
-                    <i class="fa-regular fa-user icon"></i>
-                </li>
+        <header class="d-flex justify-content-end">
+            <div class="row p-0 m-0">
+                <div class="col p-0">
+                    <li class="list-1">
+                        <p class="m-0"><a href="./Registrate.html" class="link">Usuario</a></p>
+                    </li>
+                </div>
 
-                <li class="list-2">
-                    <p><a href="./Registrate.html" class="link">Carrito</a></p>
-                    <i class="fa-regular fa-user icon"></i>
-                </li>
+                <div class="col p-0">
+                    <li class="list-2">
+                        <p class="m-0"><a href="./Registrate.html" class="link">Carrito</a></p>
+                    </li>
+                </div>
             </div>
         </header>
 
         <!--Nav/Menu-->
-        <nav class="nav">
-            <a href="../index.html" class="logo nav-link">Yunino</a>
-            <button class="toggle">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <ul class="nav_menu ">
-                <li class="nav_item">
-                    <a href="../index.html" class="nav-menu-link nav-link">Inicio</a>
-                </li>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Yunino</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars icono"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
 
-                <li class="nav_item">
-                    <a href="./productos.html" class="nav-menu-link nav-link">Producto</a>
-                </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./productos.html">Libreria</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./productos.html">Merceria</a></li>
+                            </ul>
+                        </li>
 
-                <li class="nav_item">
-                    <a href="./quienesSomos.html" class="nav-menu-link nav-link">Quienes Somos</a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quienesSomos.html">Quienes Somos</a>
+                        </li>
 
-                <li class="nav_item">
-                    <a href="./contacto.html" class="nav-menu-link nav-link">Contacto</a>
-                </li>
-            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Bucar Productos"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
 
         <!-- Pagina -->
+        <main class="cont-main">
+            <div class="cont-cards row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 m-0 g-2">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/img_prod/1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Útiles Escolares Librería Revendedores Kioscos Combo Set.</p>
+                            <strong class="card-title">$ 27.802</strong>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/img_prod/2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Kit Marcadores - Articulos De Libreria.</p>
+                            <strong class="card-title">$ 1.802</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/img_prod/3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">kit Escolar Basica Primaria 17 Articulos De Libreria .</p>
+                            <strong class="card-title">$ 18.000</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/img_prod/4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">kit Escolar Basica Primaria 17 Articulos De Libreria .</p>
+                            <strong class="card-title">$ 18.000</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/img_prod/5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">kit Escolar Basica Primaria 17 Articulos De Libreria .</p>
+                            <strong class="card-title">$ 18.000</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/img_prod/6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">kit Escolar Basica Primaria 17 Articulos De Libreria .</p>
+                            <strong class="card-title">$ 15.000</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/img_prod/7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">kit Merceria Basica - Articulos De Merceria .</p>
+                            <strong class="card-title">$ 20.000</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/img_prod/8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">kit Merceria Basica - Articulos De Merceria .</p>
+                            <strong class="card-title">$ 30.000</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/img_prod/9.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">kit Merceria Basica - Articulos De Merceria .</p>
+                            <strong class="card-title">$ 10.000</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/img_prod/10.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">kit Merceria Basica - Articulos De Merceria .</p>
+                            <strong class="card-title">$ 8.000</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/img_prod/11.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">kit Merceria Basica - Articulos De Merceria .</p>
+                            <strong class="card-title">$ 16.000</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/img_prod/12.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">kit Merceria Basica - Articulos De Merceria .</p>
+                            <strong class="card-title">$ 4.000</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
         <!-- Pie de Pagina -->
         <footer class="footer">
             <div class="grupo_1">
                 <div class="box">
                     <figure>
                         <a href="#">
-                            <img src="../img/Logo.jpg" alt="Logo Empresa" width="50px">
+                            <img src="../img/img_logo/Logo.jpg" alt="Logo Empresa" width="50px">
                         </a>
                     </figure>
                 </div>
