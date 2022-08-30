@@ -23,6 +23,11 @@ footer {
 }
 
 /*::::::: area de cabecera :::::::*/
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+}
+
 .list-1,
 .list-2 {
     padding-top: 5px;
@@ -30,26 +35,42 @@ footer {
     padding-left: 25px;
     padding-right: 25px;
     list-style: none;
-    background-color: #ebf1f7;
+    background-color: #d9fbfb;
 }
 
 .list-1:hover {
-    background: #d9fbfb;
+    background: #7cc4c4;
     transition: 0.5s;
+    border-radius: 10px;
 }
 
 .list-2:hover {
-    background: #d9fbfb;
+    background: #7cc4c4;
     transition: 0.5s;
+    border-radius: 10px;
 }
 
 .link {
     text-decoration: none;
-    color: rgb(164, 187, 209);
+    color: blue;
     cursor: pointer;
 }
 
 /*::::::: menu navegacion :::::::*/
+.cabeceramenu {
+    background-color: #d9fbfb;
+    padding: 0%;
+}
+
+.nav-menu {
+    margin-left: 20px;
+}
+
+.nav-menu:hover {
+    background: #7cc4c4;
+    transition: 0.5s;
+    border-radius: 10px;
+}
 
 /*::::::: menu bars :::::::*/
 .icono {
@@ -59,6 +80,10 @@ footer {
 }
 
 /*:::::: Pagina Principal - Carrusel ::::::*/
+.contenedor-carrusel {
+    height: 800px;
+}
+
 .carousel-inner,
 .carousel-item {
     animation: cambio 3s infinite alternate;
@@ -66,7 +91,8 @@ footer {
 }
 
 .carousel-item img {
-    height: 500px;
+    width: 100%;
+    height: 800px;
 }
 
 .caja-text {
@@ -95,22 +121,21 @@ footer {
 .titulo strong {
     color: blue;
 }
+
 /*::::::: Pagina Productos :::::::*/
-.cont-cards,
-.card{
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.card {
+    margin: 20px;
     box-shadow: 12px 14px 15px skyblue;
     transition: all 0.3s ease;
     border-style: solid;
     border-color: aliceblue;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(0.9);
     border-radius: 20px;
 }
+
 /*::::::: Pagina Quienes Somos :::::::*/
 .cont-parf {
     background-color: #ebf1f7;
@@ -157,7 +182,7 @@ footer {
 }
 
 /*::::::: Pagina Contacto :::::::*/
-.seccion-contac{
+.seccion-contac {
     background-color: #ebf1f7;
 }
 
@@ -341,6 +366,11 @@ footer {
         color: rgb(27, 161, 202);
     }
 
+    .cabeceramenu {
+        background-color: #d9fbfb;
+    }
+    
+
     /*::::::: area de pagina Principal :::::::*/
 
     /*::::::: area de pie de pagina :::::::*/
@@ -387,6 +417,11 @@ footer {
         padding-left: 15px;
         color: rgb(27, 161, 202);
     }
+
+    .cabeceramenu {
+        background-color: #d9fbfb;
+    }
+    
 
     /*::::::: area de pagina Principal :::::::*/
 
