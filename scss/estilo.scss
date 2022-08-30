@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-img {
+    background-image: url(../img/img_registro/registro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formulario-registrarse {
+    margin: auto;
+    margin-top: 100px;
+    background-color: #fff;
+    width: 50%;
+    padding: 10px;
+
+    .registrate {
+        text-align: center;
+        color: #1a2537;
+        font-size: 30px;
+    }
+
+    .contenedor-regitrarse {
+        width: 85%;
+        margin: auto;
+
+        .contenedor-input-reg {
+            display: flex;
+            margin-bottom: 15px;
+            width: 100%;
+            border: 1px solid #aaa;
+
+            .input-reg[type="text"],
+            .input-reg[type="email"],
+            .input-reg[type="password"] {
+                width: 85%;
+                font-size: 20px;
+                padding: 15px;
+                border: none;
+            }
+
+            .icon-reg {
+                width: 5px;
+                margin: auto;
+                text-align: center;
+                color: #999;
+            }
+        }
+    }
+
+    .button-reg {
+        border: none;
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        background-color: #1a2537;
+        padding: 15px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+
+    }
+
+    .button-reg:hover {
+        background: cadetblue;
+    }
+
+    .parrafo {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .link-reg {
+        text-decoration: none;
+        color: #1a2537;
+    }
+
+}
+
+
+/*:::::: disposito mobile para pag registro::::::: */
+@media screen and (max-width: 400px) {
+    .formulario-registrarse {
+        margin: auto;
+        margin-top: 50px;
+        width: 400px;
+    }
+
+}
+
+/*:::::: disposito tablet para pag registro::::::: */
+@media screen and (max-width: 700px) {
+    .formulario-registrarse {
+        margin: auto;
+        margin-top: 100px;
+        width: 600px;
+    }
+
+}

@@ -1,0 +1,24 @@
+{
+  "name": "comision-33025---juan-nicolas-perez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss":"node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanNicolasPerez/1.-Comision-33025.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanNicolasPerez/1.-Comision-33025/issues"
+  },
+  "homepage": "https://github.com/JuanNicolasPerez/1.-Comision-33025#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
